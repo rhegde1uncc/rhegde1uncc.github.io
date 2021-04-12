@@ -185,11 +185,6 @@
 			);
 	}
 		
-	if(opts.pagination==true){
-		wrap.append(
-			'<div class="camera_pag"></div>'
-			);
-	}
 		
 	wrap.append(
 		'<div class="camera_loader"></div>'
