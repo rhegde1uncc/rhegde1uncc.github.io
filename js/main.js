@@ -41,6 +41,13 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+/*===== Form clear after submit=====*/
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
